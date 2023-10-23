@@ -1,0 +1,15 @@
+class TaskBuilder
+{
+ private $name;
+private $dueDate;
+
+public function _contruct($name, $duedate = null)
+{
+$this ->name = $name;
+$this ->dueDate = $ dueDate;
+}
+
+public function build()
+{
+return new Task($this->name, $this-> duedate);
+}}
