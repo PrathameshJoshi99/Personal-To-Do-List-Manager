@@ -1,15 +1,4 @@
-class TaskBuilder
-{
- private $name;
-private $dueDate;
+require_once 'classes/task.php';
+require_once 'classes/taskbuilder.php';
 
-public function _contruct($name, $duedate = null)
-{
-$this ->name = $name;
-$this ->dueDate = $ dueDate;
-}
-
-public function build()
-{
-return new Task($this->name, $this-> duedate);
-}}
+$taskBuilder1 = new TaskBuilder(' buy groceries', '2023-08-19');
